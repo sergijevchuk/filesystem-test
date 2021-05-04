@@ -40,6 +40,7 @@ void load(FILE *f) {
 	readUintArray((uint8_t *)&super,sizeof(super),f);
 	if (super.magic == MAGIC) {
 		readUintArray((uint8_t *)&root,sizeof(root),f);
+                printf("%s\n",root.name);
 	} else {
 		printf("S!\n");
 	}
